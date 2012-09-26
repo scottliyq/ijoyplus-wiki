@@ -1,0 +1,5 @@
+网站设置,admin_config.php?action=config
+数据添加,admin_vod.php?action=add
+
+广告添加,admin_ads.php?action=add
+广告添加1,admin_ads.php?action=add1

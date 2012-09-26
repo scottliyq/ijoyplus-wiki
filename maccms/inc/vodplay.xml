@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<players>
+	<player status="1" sort="1" from="youku" show="优酷视频" des="youku.com"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="56" show="我乐视频" des="56.com"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="tudou" show="土豆视频" des="tudou.com"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="ku6" show="酷6视频" des="ku6.com"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="qq" show="ＱＱ播客" des="video.qq.com"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="6rooms" show="六房间" des="6.cn"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="sohu" show="搜狐视频" des="v.sohu.com"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="joy" show="激动网" des="joy.cn"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="tudouhd" show="土豆(高清)" des="hd.tudou.com"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="sohuhd" show="搜狐(高清)" des="tv.sohu.com"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="ku6hd" show="酷6(高清)" des="hd.ku6.com"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="openv" show="天线(高清)" des="openv.com"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="sinahd" show="新浪(高清)" des="video.sina.com.cn"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="qiyi" show="奇艺" des="qiyi.com"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="letv" show="乐视" des="letv.com"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="pptv" show="PPTV" des="pptv.com"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="swf" show="flash文件" des="swf"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="flv" show="flv文件" des="flv"><tip><![CDATA[无需安装任何插件]]></tip></player>
+	<player status="1" sort="1" from="baidu" show="百度影音" des="player.baidu.com"><tip><![CDATA[<a href="http://union.maccms.com/gg/baidu.html" target="_blank">需要下载百度影音播放器</a>]]></tip></player>
+	<player status="1" sort="1" from="qvod" show="快播" des="qvod.com"><tip><![CDATA[<a href="http://union.maccms.com/gg/qvod.html" target="_blank">需要下载快播QVOD播放器</a>]]></tip></player>
+	<player status="1" sort="1" from="gvod" show="迅播" des="gvod.xunlei.com"><tip><![CDATA[<a href="http://union.maccms.com/gg/gvod.html" target="_blank">需要下载讯播GVOD播放器</a>]]></tip></player>
+	<player status="1" sort="1" from="baofeng" show="暴风影音" des="baofeng.com"><tip><![CDATA[<a href="http://union.maccms.com/gg/baofeng.html" target="_blank">需要下载暴风影音播放器</a>]]></tip></player>
+	<player status="1" sort="1" from="cool" show="酷播" des="myCoolPlayer.com"><tip><![CDATA[<a href="http://union.maccms.com/gg/cool.html" target="_blank">需要下载酷播播放器</a>]]></tip></player>
+	<player status="1" sort="1" from="web9" show="webplayer9" des="webplayer9.com"><tip><![CDATA[<a href="http://union.maccms.com/gg/web9.html" target="_blank">需要下载WebPlayer9播放器</a>]]></tip></player>
+	<player status="1" sort="1" from="ppfilm" show="皮皮影音" des="pipi.la"><tip><![CDATA[<a href="http://union.maccms.com/gg/ppfilm.html" target="_blank">需要下载皮皮影音播放器</a>]]></tip></player>
+	<player status="1" sort="1" from="pvod" show="闪播" des="pvod.cn"><tip><![CDATA[<a href="http://union.maccms.com/gg/pvod.html" target="_blank">需要下载闪播PVOD播放器</a>]]></tip></player>
+	<player status="1" sort="1" from="ppvod" show="ppvod" des="ppvod.cn"><tip><![CDATA[<a href="http://www.ppacc.com/" target="_blank">需要下载PP加速器</a>]]></tip></player>
+	<player status="1" sort="1" from="webplay" show="远古" des="viewgood.net"><tip><![CDATA[<a href="http://union.maccms.com/gg/webplay.html" target="_blank">需要下载远古播放器</a>]]></tip></player>
+	<player status="1" sort="1" from="real" show="Real播放器" des="real.cn"><tip><![CDATA[需要电脑安装RealPlayer播放器]]></tip></player>
+	<player status="1" sort="1" from="media" show="MediaPlayer" des="mediaplayer"><tip><![CDATA[无需安装任何插件]]></tip></player>
+</players>
