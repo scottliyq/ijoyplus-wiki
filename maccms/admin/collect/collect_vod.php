@@ -526,6 +526,7 @@ function MovieInflow($sql_collect,$MovieNumW)
 	{
 		$flag=false;
 		$title = $row["m_name"];
+		$testUrl = $row["m_urltest"];
 		$title = replaceStr($title,"'","''");
 		$strSet="";
 		$sql = "SELECT * FROM {pre}vod WHERE d_name = '".$title."'";
@@ -629,7 +630,7 @@ function MovieInflow($sql_collect,$MovieNumW)
 		}
 		
 		//获取影片URL
-		$playAndWebArray= getVodPlanAndWebUrl($row["m_id"]);
+		$playAndWebArray= getVodPlanAndWebUrl($row["m_id"],$testUrl);
 		
 //		$urls = getVodUrl($row["m_id"]);
         
@@ -660,13 +661,15 @@ function MovieInflow($sql_collect,$MovieNumW)
 				$rc = false;
 				$tmpplayurl = "";
 				$tmpweburl = "";
+				
 				for ($k=0;$k<count($arr2);$k++){
 					if ($rc) { $tmpplayurl = $tmpplayurl . "$$$";$tmpweburl = $tmpweburl . "$$$";}
 					if ($arr2[$k] = $row["m_playfrom"] ) { $arr1[$k] = $urls; $tempWebArray1[$k] = $webUrls; }
 					$tmpplayurl = $tmpplayurl . $arr1[$k];
-					$tmpweburl = $tmpweburl . $arr1[$k];
+					$tmpweburl = $tmpweburl . $tempWebArray1[$k];
 					$rc = true;
 				}
+				
 				$strSet .="d_playurl='".$tmpplayurl."' , webUrls='".$tmpweburl."' ";
 			}
 		}
@@ -726,13 +729,14 @@ function getVodUrl($id)
 	return  $TempUrl;
 }
 
-function getVodPlanAndWebUrl($id)
+function getVodPlanAndWebUrl($id,$testUrl)
 {
 	global $db;
 	$playUrl="";
 	$webUrl="";
 	$sql2="select * from {pre}cj_vod_url where u_movieid=".$id ." order by u_id  asc";
 	$rs_collect2= $db->query($sql2);
+	$rscount = $db -> num_rows($rs_collect2);
 	$num=1;
 	$playNum=1;
 	while ($row = $db ->fetch_array($rs_collect2))
@@ -743,17 +747,23 @@ function getVodPlanAndWebUrl($id)
 		Else{
 			$playUrl .= "#".$row["u_url"];
 		}
-		$temp=explode("$", $playUrl);
-		if(count($temp)==2){
-			$playNum=$temp[0].'$';
+		
+		$urstee=$row["u_weburl"];
+		if($rscount==1 && (!(isset($urstee) && !is_null($urstee)))){
+			$webUrl=$testUrl;
 		}else {
-			$playNum=$num.'$';
-		}
-		if ($num ==1) {
-			$webUrl .= $playNum.$row["u_weburl"];
-		}
-		Else{
-			$webUrl .= "{Array}".$playNum.$row["u_weburl"];
+			$temp=explode("$", $playUrl);
+			if(count($temp)==2){
+				$playNum=$temp[0].'$';
+			}else {
+				$playNum=$num.'$';
+			}
+			if ($num ==1) {
+				$webUrl .= $playNum.$urstee;
+			}
+			Else{
+				$webUrl .= "{Array}".$playNum.$urstee;
+			}
 		}
 		$num=$num+1;
 	}
