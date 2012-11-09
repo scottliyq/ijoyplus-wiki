@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<timmings>
-	
-<timming><name>定时生成首页</name><des>定时生成首页</des><status>1</status><file>timming_makehtml.php</file><paramets>action=index&amp;flag=vod</paramets><weeks>1,2,3,4,5,6,0</weeks><hours>0,2,4,6,8,9,11,13,15,17,19,21,23</hours><runtime>2012-05-04 23:51:51</runtime></timming><timming><name>定时生成地图</name><des>定时生成地图</des><status>1</status><file>timming_makehtml.php</file><paramets>action=map&amp;flag=vod</paramets><weeks>1,2,3,4,5,6,0</weeks><hours>0,2,4,6,8,9,11,13,15,17,19,21,23</hours><runtime>2012-05-04 23:52:04</runtime></timming><timming><name>定时生成当天数据</name><des>定时生成当天数据</des><status>1</status><file>timming_makehtml.php</file><paramets>action=viewday&amp;flag=vod</paramets><weeks>1,2,3,4,5,6,0</weeks><hours>1,3,5,7,10,12,14,16,18,20,22</hours><runtime>2012-05-04 23:45:17</runtime></timming></timmings>
